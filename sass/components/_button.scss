@@ -1,0 +1,81 @@
+.button {
+    font-family: inherit;
+    color: getColor('title-text');
+    background-color: getColor('second-background');
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    padding: 6px 22px;
+    margin: auto;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: getAnimation('duration');
+    transition-timing-function: getAnimation('timing-function');
+
+    &--active {
+        background-color: getColor('accent');
+        color: getColor('second-text');
+    }
+    .button__list &:hover,
+    .button__list &:focus {
+      color: getColor('second-text');
+      background-color: getColor('accent');
+    }
+    &--shadowed:hover,
+    &--shadowed:focus {
+      box-shadow: 
+      0px 3px 1px rgba(0, 0, 0, 0.1), 
+      0px 1px 2px rgba(0, 0, 0, 0.08), 
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+.button__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.button__item {
+    margin-right: 8px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.button__hero--active {
+    display: block;
+    padding: 10px 32px;
+    margin: auto;
+    transition-property: box-shadow;
+    transition-duration: getAnimation('duration');
+    transition-timing-function: getAnimation('timing-function');
+
+    &:hover,
+    &:focus {
+        box-shadow: getColor('button-shadow');
+    }
+}
+.button__follow {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin: 0;
+    margin-left: 12px;
+}
+.button__modal {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: getColor('button-shadow');
+
+    &:hover,
+    &:focus {
+        background: #188CE8;
+    }
+}

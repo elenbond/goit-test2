@@ -1,0 +1,39 @@
+.client__list {
+    display: flex;
+}
+
+.client__item {
+    margin-right: 30px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    justify-content: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+  
+.client__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    color: getColor('icon-sites');
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition-property: color, border-color;
+    transition-duration: getAnimation('duration');
+    transition-timing-function: getAnimation('timing-function');
+
+    &:hover,
+    &:focus {
+        color: getColor('accent');
+        border-color: getColor('accent');
+    }
+}
+
+.client__icon {
+    fill: currentColor;
+}

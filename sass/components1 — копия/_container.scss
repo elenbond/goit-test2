@@ -1,0 +1,39 @@
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+/* Общий блок */
+.container__footer {
+  display: flex;
+  align-content: center;
+  align-items: baseline;
+}
+/* Контейнер для адреса */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-left: 0;
+  padding: 0;
+}
+/* Контейнер для ссылок */
+.networks {
+  margin: 0;
+  margin-left: 70px;
+  padding: 0;
+}
+/* Контейнер для подписки */
+.follow {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-left: 93px;
+}

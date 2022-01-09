@@ -1,0 +1,27 @@
+@import 'utils/variables';
+@import 'utils/reset';
+@import 'components/container';
+@import 'components/page-header';
+@import 'components/logo';
+@import 'components/site-nav';
+@import 'components/contacts';
+@import 'components/section';
+@import 'components/hero';
+@import 'components/features';
+@import 'components/photos';
+@import 'components/team';
+@import 'components/clients';
+@import 'components/button';
+@import 'components/categories';
+@import 'components/page-footer';
+@import 'components/follow';
+@import 'components/ftr-networks';
+@import 'components/backdrop';
+@import 'components/modal';
+
+body {
+    background-color: getColor('background');
+    color: getColor('primary-text');
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em;
+}

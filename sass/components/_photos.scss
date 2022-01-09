@@ -1,0 +1,38 @@
+.section.photos {
+    padding-top: 0;
+}
+.photos__list {
+    display: flex;
+}
+.photos__item {
+    display: block;
+    text-align: start;
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+  
+.photos__thumb {
+    position: relative;
+    display: flex;
+
+    & > .photos__text {
+        position: absolute;
+        width: 370px;
+        height: 70px;
+        background: rgba(47, 48, 58, 0.8);
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: getColor('second-text');
+    }
+}
+  

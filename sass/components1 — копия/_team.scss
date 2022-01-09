@@ -1,0 +1,71 @@
+.teams {
+    background-color: getColor('second-background');
+}
+.person {
+    display: block;
+    padding: 30px 32px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &__name {
+        color: getColor('title-text');
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+    }
+
+    &__spesification {
+        font-size: 16px;
+        line-height: 1.19;
+        margin-top: 10px;
+    }
+}
+
+.team {
+    display: flex;
+
+    &__item {
+        margin-right: 30px;
+        background-color: getColor('second-text');
+    }
+
+    &item:last-child {
+        margin-right: 0;
+    }
+}
+
+  
+.sites {
+    display: flex;
+    margin-top: 16px;
+}
+.site__item {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+  
+  .site__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    color: getColor('icon-sites');
+    box-sizing: border-box; 
+    border-radius: 50%;
+    transition-property: color, background-color;
+    transition-duration: getAnimation('duration');
+    transition-timing-function: getAnimation('timing-function');
+
+    &:hover,
+    &:focus  {
+      color: getColor('second-text');
+      background-color: getColor('accent');
+    }
+}
+.site__icon {
+    fill: currentColor;
+}
