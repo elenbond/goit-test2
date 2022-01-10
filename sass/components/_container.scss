@@ -4,11 +4,17 @@
   padding-left: 15px;
   margin: 0 auto;
 
-  // &__header {
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
-  // }
+  &__header {
+    @media screen and (max-width: 480px), (min-width: 480px) {
+      // padding-right: 15px;
+      // padding-left: 15px;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
   @media screen and (min-width: 480px) {
     width: 480px;
   }

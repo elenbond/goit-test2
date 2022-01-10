@@ -3,13 +3,18 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  margin-right: 95px;
   color: getColor('accent');
   padding-top: 24px;
   padding-bottom: 25px;
 
+  // @media screen and (max-width: 480px), (min-width: 480px) {
+  
+  // }
   @media screen and (min-width: 768px) {
-    margin-right: 88px;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 95px;
   }
 
   &--page-footer {
