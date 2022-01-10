@@ -22,11 +22,30 @@
 }
 
 .team {
-    display: flex;
+    // display: flex;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 
     &__item {
         margin-right: 30px;
         background-color: getColor('second-text');
+
+        @media screen and (max-width: 480px), (min-width: 480px) {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 4 * 15px)/2);
+            margin: 15px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 4 * 30px)/4);
+            margin: 15px;
+        }
     }
 
     &item:last-child {
@@ -37,6 +56,7 @@
   
 .sites {
     display: flex;
+    justify-content: center;
     margin-top: 16px;
 }
 .site__item {

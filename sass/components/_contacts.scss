@@ -5,8 +5,13 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
+    // display: flex;
+    // justify-content: flex-end;
+
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+        flex-direction: column;
+    }
 
     &__icon {
         fill: currentColor;
@@ -23,6 +28,11 @@
     transition-property: color;
     transition-duration: getAnimation('duration');
     transition-timing-function: getAnimation('timing-function');
+    
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        padding: 0;
+    }
 
     &:hover,
     &:focus {
@@ -32,8 +42,14 @@
   
 .contacts__item {
     display: flex;
-    align-items: flex-end;
+    // align-items: flex-end;
     margin-right: 50px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: flex-end;
+        margin: 0;
+    }
 
     &:last-child {
         margin-right: 0;

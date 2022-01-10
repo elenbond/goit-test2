@@ -1,5 +1,15 @@
 .section.photos {
     padding-top: 0;
+
+    @media screen and (max-width: 480px), 
+    (min-width: 480px), 
+    (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
 }
 .photos__list {
     display: flex;
